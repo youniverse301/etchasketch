@@ -3,11 +3,22 @@ const gridContainer = document.createElement('div');
     gridContainer.classList.add('gridContainer');
 body.appendChild(gridContainer);
 
+
+
 function createTable() {
-    for (let i = 0; i < 256; i += 1) {
-      const createDiv = document.createElement('div');
-      createDiv.className="cell"
-      gridContainer.appendChild(createDiv);
+    for (let i = 0; i < 256; i++) {
+      gridContainer.innerHTML += '<div class="cell"></div>'
     }
 }
 createTable();
+
+
+var x = document.querySelectorAll('.cell');
+
+
+x.forEach(x => {
+    x.addEventListener('mouseover', function color(event) {
+     x.setAttribute('style', 'background-color: black;');
+    })
+  })
+

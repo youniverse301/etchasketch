@@ -1,11 +1,11 @@
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(16, 10px);
-    grid-template-rows: repeat(16, 10px);
-    
+    justify-content: center;
+    grid-template-columns: repeat(16, 24px);
+    grid-template-rows: repeat(16, 24px);
 }
 
 .cell {
-border: 1px solid #000000;
-background: white;
+display: flex;
+border: 1px solid #a9a9a9;
 }
